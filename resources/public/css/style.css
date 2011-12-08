@@ -1,0 +1,21 @@
+body {
+  font-family: Arial;
+  margin: 0 auto;
+  background: #211D1E; 
+}
+
+#toolbar {
+  height: 22px;
+  width: 100%;
+  padding: 10px 20px;
+  color: #ccc;
+}
+
+.notepad {
+  background: #fff;
+  width: 90%;
+  height: 600px;
+  resize: none;
+  padding: 10px;
+  margin: 20px;
+}

@@ -7,7 +7,10 @@
             (html5
               [:head
                [:title "iskine"]
-               (include-css "/css/reset.css")]
+               (include-css "/css/reset.css")
+               (include-css "/css/style.css")]
               [:body
+               [:div#toolbar
+                "iskine"]
                [:div#wrapper
                 content]]))

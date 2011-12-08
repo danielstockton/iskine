@@ -5,12 +5,9 @@
         hiccup.page-helpers
         hiccup.form-helpers))
 
-(defpartial notefield [{:keys [note]}]
-  (text-field "note" note))
+(defpartial notepad [{:keys [notepad]}]
+            [:section.notepad {:contenteditable "true"}])
 
 (defpage "/:id" {:keys [id]}
          (common/layout
-           [:h1 "Notepad: " id]
-           (form-to [:post (str "/" id "/submit")]
-            (notefield id)
-            (submit-button "Submit"))))
+           (notepad id)))
