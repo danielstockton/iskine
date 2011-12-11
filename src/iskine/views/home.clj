@@ -8,10 +8,11 @@
 (defn randchar
   "returns a random alphanumeric character"
   []
-  (char (nth (range 48 122) (rand (count (range 48 122))))))
+  (let [alphanum (concat (range 48 58) (range 65 91) (range 97 123))]
+    (char (nth alphanum (rand (count alphanum))))))
 
 (defn randstring 
-  "returns a randomised string"
+  "returns a randomised string of length 10"
   []
   (apply str (take 10 (repeatedly randchar))))
 

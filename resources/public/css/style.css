@@ -4,18 +4,62 @@ body {
   background: #211D1E; 
 }
 
-#toolbar {
-  height: 22px;
-  width: 100%;
-  padding: 10px 20px;
+a {
   color: #ccc;
+  text-decoration: none;
+}
+
+#logo {
+  float: left;
+  font-size: 2em;
+  font-family: 'Bitter', serif;
+  padding: 10px 0 0 20px;
+  line-height: 30px;
+}
+
+#nav {
+  float: left;
+  margin: 12px 0 0 40px;
+  line-height: 30px;
+}
+
+#nav a {
+  padding: 20px;
+}
+
+#nav a:hover {
+  background: #ccc;
+  color: #211D1E;
+}
+
+#nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+#toolbar {
+  height: 30px;
+  width: 100%;
+  color: #ccc;
+}
+
+#wrapper {
+  margin: 20px;
+  padding: 10px;
 }
 
 .notepad {
   background: #fff;
-  width: 90%;
+  width: 100%;
   height: 600px;
   resize: none;
   padding: 10px;
-  margin: 20px;
+  margin: -10px;
 }
