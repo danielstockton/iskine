@@ -24,7 +24,7 @@ a {
 }
 
 #nav a {
-  padding: 20px;
+  padding: 20px 10px;
 }
 
 #nav a:hover {
@@ -53,12 +53,14 @@ a {
 #wrapper {
   margin: 20px;
   padding: 10px;
+  height: 100%;
 }
 
-.notepad {
+#notepad {
   background: #fff;
   width: 100%;
   height: 600px;
+  overflow: auto;
   resize: none;
   padding: 10px;
   margin: -10px;
