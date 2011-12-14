@@ -1,5 +1,6 @@
 (ns iskine.models
-  (:use somnium.congomongo))
+  (:use somnium.congomongo)
+  (:use [somnium.congomongo.config :only [*mongo-config*]]))
 
 (comment (def conn (make-connection "iskine"
                                 :host "127.0.0.1"
