@@ -1,3 +1,3 @@
 # iskine
 
-A minimilistic online notebook 
+Notepad.cc clone written in clojure 
