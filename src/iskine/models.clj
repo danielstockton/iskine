@@ -2,6 +2,7 @@
   (:use somnium.congomongo)
   (:use [somnium.congomongo.config :only [*mongo-config*]]))
 
+;; Localhost config
 (comment (def conn (make-connection "iskine"
                                 :host "127.0.0.1"
                                 :port 27017))
@@ -15,6 +16,7 @@
     (when (.find matcher) ;; Check if it matches.
       (zipmap [:match :user :pass :host :port :db] (re-groups matcher))))) ;; Construct an options map.
 
+;; Heroku config
 (defn init []
   "Checks if connection and collection exist, otherwise initialize."
   (when (not (connection? *mongo-config*)) ;; If global connection doesn't exist yet.
